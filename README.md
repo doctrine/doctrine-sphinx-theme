@@ -2,8 +2,9 @@ This is the common Sphinx Theme for all Doctrine Project Documentations.
 
 Use this by adding a submodule to your docs folder:
 
-    git submodule add https://github.com/doctrine/doctrine-sphinx-theme.git _theme
+    git submodule add https://github.com/doctrine/doctrine-sphinx-theme.git en/_theme
 
-Add this folder to the conf.py property:
+Change the conf.py:
 
-    html_theme_dir = ['_theme']
+    html_theme = "doctrine"
+    html_theme_path = ['_theme']
