@@ -96,6 +96,7 @@ div.bodywrapper {
 div.body {
     background-color: #ffffff;
     color: #000000;
+    max-width: 800px;
 }
 
 div.body ul {
