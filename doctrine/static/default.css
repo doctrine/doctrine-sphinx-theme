@@ -973,3 +973,10 @@ div.jsactive pre
     overflow: auto;
     margin-bottom: 10px;
 }
+#getting-help {
+    background: none repeat scroll 0 0 #f2f2f2;
+    float: right;
+    margin: 2em 0 2em 2em;
+    padding: 1em;
+    width: 40%;
+}
