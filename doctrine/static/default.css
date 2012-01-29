@@ -973,3 +973,15 @@ div.jsactive pre
     overflow: auto;
     margin-bottom: 10px;
 }
+
+#welcome-to-the-doctrine-project {
+    float: left;
+    width: 500px;
+}
+#latest-blog-posts {
+    width: 300px;
+    float: left;
+}
+#doctrine-projects {
+    clear: both;
+}
