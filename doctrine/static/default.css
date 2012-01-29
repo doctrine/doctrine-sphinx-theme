@@ -80,7 +80,7 @@ abbr,acronym { border:0; }
 
 div.document {
     margin-right: 30px;
-    font-size: 12pt;
+    font-size: 10pt;
     text-align: left !important;
 }
 
@@ -728,7 +728,7 @@ table.docutils td, table.docutils th
 
 span.pre
 {
-  font-size: 85%;
+    font-size: 90%;
 }
 
 .bd .content .navigation li
@@ -741,7 +741,7 @@ a.headerlink
     padding: 2px;
     color: #ddd;
     text-decoration: none;
-    font-size: 80%;
+    font-size: 90%;
 }
 
 a.reference em, a.internal em
