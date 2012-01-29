@@ -23,7 +23,7 @@ a:hover  { color: #00508c; text-decoration:underline; border:0; }
 ::selection { background: #2E6BC8; color: #fff; }
 
 /* layout */
-#wrapper { width: 96%; min-width: 1000px; margin-left: auto; margin-right: auto; position: relative; }
+#wrapper { width: 96%; min-width: 1000px; max-width: 1150px; margin-left: auto; margin-right: auto; position: relative; }
 #header { position:relative; background: transparent url(arrows.jpg) no-repeat top right;}
 #header h1#h1title { margin: 0; padding: 0; color: #fff; position: absolute; top: 50px; right: 20px; font-weight:bold; font-size:153.9%; text-shadow: #4E89D5 1px 1px 1px; }
 #header h1#h1title a { color: #fff; }
