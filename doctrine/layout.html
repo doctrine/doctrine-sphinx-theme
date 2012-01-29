@@ -40,6 +40,27 @@
             </a></p>
           {%- endif %}
           {%- endblock %}
+          {%- block sidebarsearch %}
+          {%- if pagename != "search" %}
+            {% if versions %}
+                <h3>Project Versions</h3>
+
+                <select name="versions" id="versions">
+            {% for slug, url in versions %}
+            <option value="http://readthedocs.org{{ url }}">{{ slug }}</option>
+            {% endfor %}
+                </select>
+            {% endif %}
+            <div id="searchbox" style="">
+              <h3>Search</h3>
+                <form class="search" action="http://readthedocs.org/search/project/" method="get">
+                  <input type="text" name="q" size="18">
+                  <input type="submit" value="Go">
+                  <input type="hidden" name="selected_facets" value="project:{{ name }}">
+                </form>
+            </div>
+          {%- endif %}
+          {%- endblock %}
           {%- block sidebartoc %}
           {%- if display_toc %}
             <h3><a href="{{ pathto(master_doc) }}">{{ _('Table Of Contents') }}</a></h3>
@@ -70,29 +91,6 @@
           {%- if customsidebar %}
           {% include customsidebar %}
           {%- endif %}
-          {%- block sidebarsearch %}
-          {%- if pagename != "search" %}
-            {% if versions %}
-                <h3>Project Versions</h3>
-                <ul id="sidebar_versions">
-            {% for slug, url in versions %}
-              <li><a href="http://readthedocs.org{{ url }}">{{ slug }}</a></li>
-            {% endfor %}
-                </ul>
-            {% endif %}
-            <div id="searchbox" style="">
-              <h3>Search</h3>
-                <form class="search" action="http://readthedocs.org/search/project/" method="get">
-                  <input type="text" name="q" size="18">
-                  <input type="submit" value="Go">
-                  <input type="hidden" name="selected_facets" value="project:{{ name }}">
-                </form>
-                <p class="searchtip" style="font-size: 90%">
-                    Full-text doc search.
-                </p>
-            </div>
-          {%- endif %}
-          {%- endblock %}
         </div>
       </div>
       {%- endif %}{% endif %}
@@ -129,6 +127,17 @@
     <script type="text/javascript" src="../_static/configurationblock.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <script type="text/javascript" src="../_static/configurationblock.js"></script>
+
+    <script type="text/javascript">
+    <!--
+        $(document).ready(function() {
+            $("#versions").change(function() {
+                var docsUrl = $(this).val();
+                window.location.href = docsUrl;
+            });
+        });
+    -->
+    </script>
 
     {%- if use_opensearch %}
     <link rel="search" type="application/opensearchdescription+xml"
