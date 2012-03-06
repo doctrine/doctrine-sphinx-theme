@@ -209,7 +209,7 @@
                 {%- if not embedded %}{% if not theme_nosidebar|tobool %}
                   <div class="bodywrapper">
                 {%- endif %}{% endif %}
-                    <div class="body">
+                <div class="body" style="margin-left: {{ theme_body_leftmargin }}px;">
                       {% block body %} {% endblock %}
                     </div>
                 {%- if not embedded %}{% if not theme_nosidebar|tobool %}
