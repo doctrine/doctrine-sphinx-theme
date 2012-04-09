@@ -993,3 +993,44 @@ div.jsactive pre
 #doctrine-projects {
     clear: both;
 }
+.githublink {
+    position: absolute; 
+    top: 0; 
+    right: 0; 
+	display:block;
+}
+.githublink img {
+    border: 0;
+}
+
+
+/**
+ * Some special Print stylesheet for those who want to print documentation pages
+ **/
+@media print {
+  #footer,
+  .footer_popout,
+  #nav.cls,
+  #content .sphinxsidebar,
+  #content .related,
+  .githublink {
+     display:none !important;
+  }
+  #content .bodywrapper {
+      margin:0;
+  }
+  #content .bodywrapper .body {
+      max-width:initial;
+  }
+  #content {
+      font-size:120%;
+  }
+  #content div.body h1,
+  #content div.body h2,
+  #content div.body h3,
+  #content div.body h4,
+  #content div.body h5,
+  #content div.body h6 {
+      background:none;
+  }
+}
