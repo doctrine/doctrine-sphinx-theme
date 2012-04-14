@@ -171,6 +171,9 @@
     {%- endif %}
 {%- endblock %}
 {%- block extrahead %} {% endblock %}
+    {% if sourcename == "error.txt" %}
+    <base target="http://www.doctrine-project.org">
+    {% endif %}
   </head>
   <body>
     <div id="wrapper">
