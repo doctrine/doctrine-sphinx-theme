@@ -98,6 +98,9 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
+    {% if sourcename == "error.txt" %}
+    <base href="http://www.doctrine-project.org/">
+    {% endif %}
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     {{ metatags }}
     {%- if not embedded and docstitle %}
@@ -171,9 +174,6 @@
     {%- endif %}
 {%- endblock %}
 {%- block extrahead %} {% endblock %}
-    {% if sourcename == "error.txt" %}
-    <base href="http://www.doctrine-project.org/">
-    {% endif %}
   </head>
   <body>
     <div id="wrapper">
