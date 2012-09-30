@@ -321,6 +321,7 @@ p.admonition-title:after {
 }
 
 pre {
+    margin-top: 10px;
     padding: 5px;
     background-color: #eeffcc;
     color: #333333;
