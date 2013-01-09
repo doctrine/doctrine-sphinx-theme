@@ -99,12 +99,17 @@ div.body {
     max-width: 800px;
 }
 
-div.body ul {
+div.body ul,
+div.body ol {
     margin-left: 30px
 }
 
 div.body ul, div.body ul li {
     list-style-type: square;
+}
+
+div.body ol, div.body ol li {
+    list-style-type: decimal;
 }
 
 div.footer {
