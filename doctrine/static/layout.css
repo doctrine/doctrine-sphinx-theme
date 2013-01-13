@@ -33,7 +33,7 @@ a:hover  { color: #00508c; text-decoration:underline; border:0; }
 #nav { text-align:right; position:relative; background:#2e6bc8 url(ur-corner.gif) no-repeat top right;}
 #nav .tl { background:transparent url(ul-corner.jpg) no-repeat top left; text-align:right; }
 #nav .tl a { text-decoration:none; }
-#nav ul { padding: 0; margin: 0; padding-top:10px; float:right; padding-bottom:10px; margin-right:15px; }
+#nav ul { padding: 0; margin: 0; padding-top:10px; float:left; padding-bottom:10px; margin-left:15px; }
 #nav ul li { padding: 0; margin: 0; display:inline; font:bold 108% "Helvetica Neue", arial, sans-serif; line-height:131%; }
 #nav ul li a:link,
 #nav ul li a:visited { color:#fff; padding:7px 10px 10px; text-shadow: #000 0px 0px 3px; }
