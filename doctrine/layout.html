@@ -42,7 +42,7 @@
           {%- endblock %}
           {%- block sidebarsearch %}
           {%- if pagename != "search" %}
-            {% if versions %}
+             {% if versions and versions|length > 1 %}
                 <h3>Project Versions</h3>
 
                 <select name="versions" id="versions">
