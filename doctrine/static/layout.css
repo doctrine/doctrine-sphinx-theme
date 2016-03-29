@@ -49,7 +49,7 @@ a:hover  { color: #00508c; text-decoration:underline; border:0; }
 #content h4 { margin:10px 0 20px 30px; font-weight:bold; font-size:120.0%; }
 #content h5 { margin:10px 0 20px 30px; font-weight:bold; font-size:110.0%; }
 #content ul li, #content ol li { margin:10px 0 0 30px; }
-#content ul { margin-bottom: 10px; }
+#content ul, #content ol { margin-bottom: 10px; }
 #content p { margin:0 30px 15px 30px; font-size:93%; line-height:182%; }
 #content dl { margin:0 30px 15px 30px; }
 
