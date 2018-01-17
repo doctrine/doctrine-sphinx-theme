@@ -6,6 +6,8 @@
 {%- set reldelim2 = reldelim2 is not defined and ' |' or reldelim2 %}
 {%- set url_root = pathto('', 1) %}
 {%- if url_root == '#' %}{% set url_root = '' %}{% endif %}
+{%- set versionsHost = 'http://docs.doctrine-project.org' -%}
+{%- if subproject is defined -%}{%- set versionsHost = versionsHost + '/projects/' + subproject -%}{%- endif -%}
 
 {%- macro relbar() %}
     <div class="related">
@@ -47,7 +49,7 @@
 
                 <select name="versions" id="versions">
             {% for slug, url in versions %}
-            <option value="http://readthedocs.org{{ url }}">{{ slug }}</option>
+            <option value="{{ versionsHost }}{{ url }}">{{ slug }}</option>
             {% endfor %}
                 </select>
             {% endif %}
