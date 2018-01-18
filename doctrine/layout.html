@@ -55,10 +55,9 @@
             {% endif %}
             <div id="searchbox" style="">
               <h3>Search</h3>
-                <form class="search" action="http://readthedocs.org/search/project/" method="get">
+                <form class="search" action="{{ pathto('search') }}" method="get">
                   <input type="text" name="q" size="18">
                   <input type="submit" value="Go">
-                  <input type="hidden" name="selected_facets" value="project:{{ name }}">
                 </form>
             </div>
           {%- endif %}
@@ -134,6 +133,7 @@
     <script type="text/javascript" src="{{ pathto('_static/doctools.js', 1) }}"></script>
     <script type="text/javascript" src="{{ pathto('_static/configurationblock.js', 1) }}"></script>
     <script src="{{ pathto('_static/bootstrap/js/bootstrap.min.js', 1) }}"></script>
+    <script type="text/javascript" src="{{ pathto('_static/searchtools.js', 1) }}"></script>
 
     <script type="text/javascript">
     <!--
